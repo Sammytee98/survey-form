@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for being an ARMY fan - we love you!</p>
+
+    <form action="mailto:stosin525@gmail.com" method="post" id="survey-form">
+
+        <fieldset id="deets">
+            <label for="name" id="name-label">Name <input type="text" name="name-label" id="name" placeholder="Enter your name" required></label>
+            <label for="name" id="email-label">Email <input type="email" name="email-label" id="email" placeholder="Enter your email" required></label>
+            <label for="number" id="number-label">Age (optional) <input type="number" name="number-label" id="number" placeholder="Age" min="18" max="90" required></label>
+
+            <label for="description">
+                We'd love to know you better. What best describes you?
+            </label>
+                <select name="" id="dropdown" required>
+                    <option value="">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Professional</option>
+                    <option value="3">Freelancer</option>
+                    <option value="4">Entrepreneur</option>
+                    <option value="5">Other</option>
+                </select>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Would you attend another BTS concert?</legend>
+            <label for="definitely"><input type="radio" name="radio" id="definitely" checked value="definitely" required> Definitely</label>
+            <label for="maybe"><input type="radio" name="radio" id="maybe" value="maybe" required> Maybe</label>
+            <label for="notSure"><input type="radio" name="radio" id="notSure" value="not-sure" required> Not sure</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="favorite">
+                What's your favorite Map of the Soul song?
+            </label>
+                <select name="" id="dropdown" required>
+                    <option value="">Select an option</option>
+                    <option value="1">Louder than bombs</option>
+                    <option value="2">00:00 (Zero O'clock)</option>
+                    <option value="3">Inner Child</option>
+                    <option value="4">ON</option>
+                    <option value="5">My Time</option>
+                    <option value="6">UGH!</option>
+                    <option value="7">Filter</option>
+                    <option value="8">Black Swan</option>
+                    <option value="9">Respect</option>
+                    <option value="10">Friends</option>
+                    <option value="11">Make It Right</option>
+                    <option value="12">Boy With Luv</option>
+                    <option value="13">Dionysus</option>
+                    <option value="14">Jamais vu</option>
+                    <option value="15">Intro: Persona</option>
+                </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Where should our next concert take place? (Check all that apply)</legend>
+            <label for="nextConcert"><input type="checkbox" name="nextConcert" id="nextConcert" value="los-angeles" required> Los Angeles</label>
+            <label for="nextConcert"><input type="checkbox" name="nextConcert" id="nextConcert" value="seoul" required> Seoul</label>
+            <label for="nextConcert"><input type="checkbox" name="nextConcert" id="nextConcert" value="abu-dhabi" required> Abu Dhabi</label>
+            <label for="nextConcert"><input type="checkbox" name="nextConcert" id="nextConcert" value="sydney" required> Sydney</label>
+        </fieldset>
+
+        <label for="comment">
+            Any comments or suggestions?
+        <textarea name="" id="comment" cols="30" rows="3"></textarea>
+        </label>
+    <fieldset>
+            <label for="terms-and-conditions" class="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" value="i-accept" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <input type="submit" value="Submit" id="submit">
+    </fieldset>
+
+    </form>
+</body>
+</html>
